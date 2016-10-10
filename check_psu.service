@@ -1,0 +1,9 @@
+[Unit]
+Description=Shut down if PSU is not connected
+
+[Service]
+ExecStart=/root/tjc/autoshutdown/check_psu.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
