@@ -1,6 +1,10 @@
 #!/bin/bash
 
-ln -s ~/tjc/autoshutdown/check_psu.service /etc/systemd/system/
+# Doesn't work because apparently systemd doesn't follow symbolic links!
+# ln -s ~/tjc/autoshutdown/check_psu.service /etc/systemd/system/
+
+cp ~/tjc/autoshutdown/check_psu.service /etc/systemd/system/
+
 systemctl start check_psu.service
 systemctl enable check_psu.service
 
