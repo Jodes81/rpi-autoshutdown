@@ -1,5 +1,7 @@
 #!/bin/bash
 
+chmod 0755 /root/tjc/autoshutdown/setdown
+
 # Doesn't work because apparently systemd doesn't follow symbolic links!
 # ln -s ~/tjc/autoshutdown/check_psu.service /etc/systemd/system/
 
