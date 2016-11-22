@@ -1,11 +1,11 @@
 #!/bin/bash
 
-chmod 0755 /root/tjc/autoshutdown/setdown
+chmod 0755 /root/utils/autoshutdown/setdown
 
 # Doesn't work because apparently systemd doesn't follow symbolic links!
-# ln -s ~/tjc/autoshutdown/check_psu.service /etc/systemd/system/
+# ln -s ~/utils/autoshutdown/check_psu.service /etc/systemd/system/
 
-cp ~/tjc/autoshutdown/check_psu.service /etc/systemd/system/
+cp ~/utils/autoshutdown/check_psu.service /etc/systemd/system/
 
 systemctl start check_psu.service
 systemctl enable check_psu.service
