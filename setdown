@@ -1,6 +1,6 @@
 #!/bin/bash
 
-systemctl top check_psu.service
+systemctl stop check_psu.service
 systemctl disable check_psu.service
 
 rm /etc/systemd/system/check_psu.service

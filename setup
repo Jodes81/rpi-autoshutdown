@@ -1,6 +1,7 @@
 #!/bin/bash
 
 chmod 0755 /root/utils/autoshutdown/setdown
+chmod 0755 /root/utils/autoshutdown/check_psu.sh
 
 # Doesn't work because apparently systemd doesn't follow symbolic links!
 # ln -s ~/utils/autoshutdown/check_psu.service /etc/systemd/system/
